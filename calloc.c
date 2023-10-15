@@ -22,4 +22,3 @@ void *_calloc(unsigned int elementCount, unsigned int size)
 
 	return (arr_alloc);
 }
-

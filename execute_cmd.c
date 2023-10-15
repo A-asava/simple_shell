@@ -29,7 +29,7 @@ int execute_command_path(void)
 			else
 			{
 				waitpid(child_pid, &exitstatus, 0);
-				if (WIFEXITED(exit_status))
+				if (WIFEXITED(status))
 					status = WEXITSTATUS(exitstatus);
 			}
 		}
