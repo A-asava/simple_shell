@@ -4,7 +4,7 @@
  * _getenv - sources an environment variable name then returns it's value
  * @variableName: The variable name sourced
  *
- * Return: pointer to variable's valu
+ * Return: pointer to variable's value
  */
 
 char *_getenv(char *variableName)
@@ -15,7 +15,8 @@ char *_getenv(char *variableName)
 
 	for (i = 0; environ[i]; i++)
 	{
-		if (!_strncmp(environ[i], variableName, var_len) && environ[i][var_len] == '=')
+		if (!_strncmp(environ[i], variableName, var_len))
+			if (environ[i][var_len] == '=')
 		{
 			path = environ[i] + var_len + 1;
 			return (path);

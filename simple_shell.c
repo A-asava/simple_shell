@@ -10,6 +10,8 @@
 
 int main(int argc, char *argv[])
 {
+	int shellStatus;
+
 	shell_count = 0;
 	shell = argv[0];
 	shellStatus = 0;

@@ -40,5 +40,5 @@ int execute_command_path(void)
 		}
 		free(commandpath);
 	}
-	return (shell_status);
+	return (status);
 }
