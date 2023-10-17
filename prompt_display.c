@@ -2,7 +2,7 @@
 
 /**
  * display_prompt - prints the prompt sign to standard output
- * @prompt: prompt sign printed
+ @prompt_sign: prompt sign printed
  *
  * Return: (0) in interactive mode and (1) in non interactive mode
  */

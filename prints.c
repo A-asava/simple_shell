@@ -107,7 +107,7 @@ int _fputstr(int fd, char *str)
 }
 
 /**
- * print_array - prints array to standard output
+ * printout_array - prints array to standard output
  * @arr: The array printed
  *
  * Return: elements number that were printed
