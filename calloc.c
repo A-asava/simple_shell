@@ -2,7 +2,7 @@
 
 /**
  * _calloc - allocates memory to given array
- * @nmemb: elements number of the array
+ * @elementCount: elements number of the array
  * @size: size of bytes alloctated to individual  elements
  * Return: pointer to the allocated memory.
 */

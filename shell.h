@@ -14,20 +14,21 @@
 #include <limits.h>
 #define _INT_MIN (1 << (sizeof(int) * 8 - 1))
 
+void *_calloc(unsigned int elementCount, unsigned int size);
 char *find_command_path(void);
 int builtin_func(void);
 int arraycpy(char *dest[], char *src[]);
-int execute_command_path(void);
-int print_array(char *array[]);
+int printout_array(char *array[]);
 char *_getenv(char *variableName);
 void free_array(char **array);
-int _fputchar(int fd, char c);
-int _fputint(int fd, int num);
+int f_putchar(int fd, char c);
+int _printint(int fd, int num);
 int _fputstr(int fd, char *str);
 int _fprintf(int fd, const char *formattedString, char *s1, int n1, char *s2);
 char **_strtok(char *str, char delim);
 int display_prompt(char *prompt_sign);
 ssize_t _getline(char **line);
+int execute_command_path(void);
 ssize_t _getchar(char c);
 int exit_shell(char *exit_status);
 int _atoi(const char *inputString);
@@ -37,7 +38,6 @@ char *_strdup(char *str);
 int _strcmp(char *s1, char *s2);
 int _strlen(char *s);
 int _strncmp(const char *str1, const char *str2, size_t n);
-void *_calloc(unsigned int elementCount, unsigned int size);
 
 extern char **environ;
 int status;

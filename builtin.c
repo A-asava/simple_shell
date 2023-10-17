@@ -17,7 +17,7 @@ int builtin_func(void)
 	}
 	if (!_strcmp(command[0], "env"))
 	{
-		print_array(environ);
+		printout_array(environ);
 		return (0);
 	}
 	return (-1);
